@@ -1,0 +1,388 @@
+:root {
+  --methodpub-frame-max: 910px;
+  --methodpub-blue: #1cabe2;
+  --methodpub-blue-strong: #0077c8;
+  --methodpub-ink: #0b3152;
+  --methodpub-muted: #617487;
+  --methodpub-line: #d8e7f0;
+  --methodpub-line-strong: #b9d8e9;
+  --methodpub-soft: #f4f9fc;
+  --methodpub-success: #20a464;
+  --methodpub-warning: #f59e0b;
+  --methodpub-danger: #e85d3f;
+  --methodpub-radius: 13px;
+  --methodpub-shadow: 0 7px 18px rgba(16, 42, 67, .065);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.methodpub-page {
+  margin: 0;
+  min-width: 320px;
+  color: var(--methodpub-ink);
+}
+
+.methodpub-page button {
+  font: inherit;
+}
+
+.methodpub-main {
+  width: min(calc(100% - 32px), var(--methodpub-frame-max));
+  max-width: var(--methodpub-frame-max);
+  margin-inline: auto;
+  padding-top: 88px;
+}
+
+.methodpub-root {
+  display: grid;
+  gap: 12px;
+}
+
+.methodpub-state--loading,
+.methodpub-state--error {
+  display: grid;
+  min-height: 46vh;
+  padding: 24px;
+  place-items: center;
+  border: 1px solid var(--methodpub-line);
+  border-radius: 18px;
+  color: var(--methodpub-muted);
+  background: rgba(255, 255, 255, .88);
+  box-shadow: var(--methodpub-shadow);
+}
+
+.methodpub-hero {
+  position: relative;
+  display: grid;
+  min-height: 160px;
+  grid-template-columns: minmax(0, 1fr) minmax(170px, .33fr);
+  gap: 16px;
+  align-items: end;
+  padding: 18px;
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 18px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 82% 26%, rgba(57, 203, 235, .25), transparent 34%),
+    linear-gradient(115deg, #062f4b 0%, #07476c 54%, #0a83ad 100%);
+  box-shadow: 0 16px 40px rgba(8, 47, 73, .12);
+}
+
+.methodpub-hero::before,
+.methodpub-hero::after {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+}
+
+.methodpub-hero::before {
+  top: -145px;
+  right: -75px;
+  width: 315px;
+  height: 315px;
+  border: 1px solid rgba(145, 226, 246, .18);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 46px rgba(145, 226, 246, .04),
+    0 0 0 92px rgba(145, 226, 246, .02);
+}
+
+.methodpub-hero::after {
+  inset: 0;
+  background: linear-gradient(125deg, rgba(1, 28, 46, .26), transparent 54%, rgba(19, 132, 170, .18));
+}
+
+.methodpub-eyebrow {
+  margin: 0 0 4px;
+  color: var(--methodpub-blue-strong);
+  font-size: 8.5px;
+  font-weight: 850;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.methodpub-hero .methodpub-eyebrow {
+  color: #78dcf6;
+}
+
+.methodpub-hero h1 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(24px, 3vw, 30px);
+  line-height: 1.05;
+  letter-spacing: -.035em;
+}
+
+.methodpub-subtitle,
+.methodpub-source-line {
+  max-width: 68ch;
+  margin: 7px 0 0;
+  color: rgba(241, 247, 250, .86);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.methodpub-hero__aside {
+  display: grid;
+  gap: 5px;
+  align-self: stretch;
+  padding: 14px;
+  place-content: center;
+  border: 1px solid rgba(255, 255, 255, .24);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, .1);
+  text-align: center;
+}
+
+.methodpub-hero__aside span,
+.methodpub-hero__aside small {
+  color: rgba(241, 247, 250, .82);
+  font-size: 10px;
+}
+
+.methodpub-hero__aside strong {
+  color: #fff;
+  font-size: 31px;
+  line-height: 1;
+}
+
+.methodpub-validation,
+.methodpub-card,
+.methodpub-source-card {
+  border: 1px solid var(--methodpub-line);
+  border-radius: var(--methodpub-radius);
+  background: rgba(255, 255, 255, .95);
+  box-shadow: var(--methodpub-shadow);
+}
+
+.methodpub-validation {
+  padding: 10px 12px;
+  border-color: #bde5f5;
+  background: linear-gradient(90deg, rgba(28, 171, 226, .08), rgba(255, 255, 255, .96));
+}
+
+.methodpub-validation strong {
+  display: block;
+  color: var(--methodpub-ink);
+  font-size: 11px;
+}
+
+.methodpub-validation span,
+.methodpub-muted {
+  color: var(--methodpub-muted);
+  font-size: 10px;
+  line-height: 1.35;
+}
+
+.methodpub-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.methodpub-card {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.methodpub-card--wide {
+  grid-column: 1 / -1;
+}
+
+.methodpub-card__head {
+  padding: 12px 12px 0;
+}
+
+.methodpub-card__head h2 {
+  margin: 0;
+  color: var(--methodpub-ink);
+  font-size: 14px;
+}
+
+.methodpub-card__body {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  color: var(--methodpub-muted);
+  font-size: 10.5px;
+  line-height: 1.45;
+}
+
+.methodpub-card__body p,
+.methodpub-card__body ul,
+.methodpub-card__body ol {
+  margin: 0;
+}
+
+.methodpub-card__body ul,
+.methodpub-card__body ol {
+  padding-left: 18px;
+}
+
+.methodpub-formula {
+  display: grid;
+  gap: 4px;
+  padding: 10px;
+  border: 1px solid #dbeaf2;
+  border-radius: 10px;
+  color: var(--methodpub-ink);
+  background: #f7fbfd;
+  text-align: center;
+}
+
+.methodpub-formula strong {
+  color: var(--methodpub-blue-strong);
+  font-size: 12px;
+}
+
+.methodpub-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.methodpub-kpi {
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #e2edf3;
+  border-radius: 10px;
+  background: #f9fcfe;
+}
+
+.methodpub-kpi span {
+  display: block;
+  color: var(--methodpub-muted);
+  font-size: 8.8px;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.methodpub-kpi strong {
+  display: block;
+  margin-top: 3px;
+  color: var(--methodpub-ink);
+  font-size: 18px;
+  line-height: 1.08;
+}
+
+.methodpub-semantic-list {
+  display: grid;
+  gap: 8px;
+}
+
+.methodpub-semantic-item {
+  padding: 9px;
+  border: 1px solid #e2edf3;
+  border-radius: 10px;
+  background: #f9fcfe;
+}
+
+.methodpub-semantic-item strong {
+  display: block;
+  color: var(--methodpub-ink);
+  font-size: 11px;
+}
+
+.methodpub-table-shell {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.methodpub-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 10px;
+}
+
+.methodpub-table th,
+.methodpub-table td {
+  padding: 8px;
+  border-right: 1px solid #e8f0f5;
+  border-bottom: 1px solid #e8f0f5;
+  text-align: left;
+  vertical-align: top;
+}
+
+.methodpub-table thead th {
+  color: var(--methodpub-ink);
+  background: #f4f9fc;
+  font-size: 9px;
+  font-weight: 850;
+}
+
+.methodpub-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.methodpub-button {
+  min-height: 34px;
+  padding: 7px 10px;
+  border: 1px solid #91c9ec;
+  border-radius: 8px;
+  color: var(--methodpub-blue-strong);
+  background: #fff;
+  font-size: 11px;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.methodpub-button:hover {
+  border-color: var(--methodpub-blue-strong);
+  background: #eef9fe;
+}
+
+.methodpub-source-card {
+  padding: 10px 12px;
+  color: var(--methodpub-muted);
+  font-size: 10px;
+}
+
+.methodpub-source-card p {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .methodpub-main {
+    width: min(calc(100% - 20px), var(--methodpub-frame-max));
+    padding-top: 82px;
+  }
+
+  .methodpub-hero,
+  .methodpub-grid,
+  .methodpub-kpis {
+    grid-template-columns: 1fr;
+  }
+
+  .methodpub-hero__aside {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 520px) {
+  .methodpub-main {
+    width: min(calc(100% - 16px), var(--methodpub-frame-max));
+  }
+
+  .methodpub-hero {
+    padding: 16px 14px;
+  }
+
+  .appx-brand img {
+    width: 96px;
+  }
+
+  .appx-nav a {
+    font-size: 11.5px;
+  }
+}
+
+/* W7B scope context reuses the shared compact comparison. */
+.methodpub-card .wash-mini { max-width: 360px; margin-top: 14px; }

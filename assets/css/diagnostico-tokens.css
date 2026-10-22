@@ -1,0 +1,39 @@
+/* W12 — Paleta de cores Selo.xlsx / 2025, valores indicados no pedido.
+   Respostas usam a paleta Selo; navegação e ícones usam azul UNICEF. */
+.wash-page {
+  --selo-blue-earth: #447098;
+  --selo-red-smoke: #DA5149;
+  --selo-navy: #01364E;
+  --selo-light-blue: #75B4CC;
+  --selo-earth-gray: #595046;
+  --selo-light-gray: #D3D6D8;
+  --selo-beige: #E4E0CE;
+  --selo-yellow: #F1B51F;
+  --unicef-blue: #1CABE2;
+  --wash-yes: var(--selo-blue-earth);
+  --wash-no: var(--selo-red-smoke);
+  --wash-ink: var(--selo-navy);
+  --wash-light-blue: var(--selo-light-blue);
+  --wash-muted: var(--selo-earth-gray);
+  --wash-missing: var(--selo-light-gray);
+  --wash-na: var(--selo-light-gray);
+  --wash-unknown: #8AA0B3;
+  --wash-accent: var(--selo-yellow);
+  --wash-action: #006CA6;
+  --wash-scope-urban: #447098;
+  --wash-scope-rural: #75B4CC;
+  --wash-surface: #FFFFFF;
+  --wash-background: #F5FAFC;
+  --wash-border: #DCECF3;
+  --wash-soft: #EAF5FA;
+  --diagnostic-max-width: 910px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 14px;
+  --card-pad: 14px;
+  --card-radius: 12px;
+  --body-size: 13px;
+  --meta-size: 12px;
+  --title-size: 15px;
+  --metric-size: 24px;
+}

@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Myriad P45";
+  src: url("../fonts/MYRIADPRO-REGULAR.OTF") format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Univers P45";
+  src: url("../fonts/UniversLTStd-Bold.otf") format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+:root {
+  color-scheme: light;
+  --p45-font-body: "Myriad P45", Arial, Helvetica, sans-serif;
+  --p45-font-display: "Univers P45", Arial, Helvetica, sans-serif;
+  --p45-cyan-950: #063b54;
+  --p45-cyan-900: #07506d;
+  --p45-cyan-800: #086f91;
+  --p45-cyan-700: #0086ad;
+  --p45-cyan-600: #00a5d5;
+  --p45-cyan-200: #a7e5f3;
+  --p45-cyan-100: #dff5fa;
+  --p45-cyan-050: #f1fbfd;
+  --p45-blue: #1cabe2;
+  --p45-ink: #17313e;
+  --p45-ink-soft: #49616d;
+  --p45-surface: #ffffff;
+  --p45-surface-soft: #f4f8fa;
+  --p45-surface-muted: #e8f0f3;
+  --p45-border: #c9d8de;
+  --p45-border-strong: #8aa4af;
+  --p45-focus: #ffcf45;
+  --p45-consolidated: #21875a;
+  --p45-consolidated-soft: #dff3e8;
+  --p45-strengthening: #2478a6;
+  --p45-strengthening-soft: #e0f0f8;
+  --p45-attention: #b76b00;
+  --p45-attention-soft: #fff0cf;
+  --p45-priority: #b33d4a;
+  --p45-priority-soft: #fbe3e6;
+  --p45-neutral: #6b7780;
+  --p45-neutral-soft: #edf1f3;
+  --p45-shadow-sm: 0 2px 8px rgb(7 80 109 / 8%);
+  --p45-shadow-md: 0 14px 34px rgb(7 80 109 / 12%);
+  --p45-radius-sm: 8px;
+  --p45-radius-md: 14px;
+  --p45-radius-lg: 22px;
+  --p45-space-1: .25rem;
+  --p45-space-2: .5rem;
+  --p45-space-3: .75rem;
+  --p45-space-4: 1rem;
+  --p45-space-5: 1.5rem;
+  --p45-space-6: 2rem;
+  --p45-space-7: 3rem;
+  --p45-max: 1500px;
+  --p45-header-h: 78px;
+}

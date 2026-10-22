@@ -1,0 +1,138 @@
+.p45-table-wrap {
+  border: 1px solid var(--p45-border);
+  border-radius: var(--p45-radius-sm);
+  max-width: 100%;
+  overflow: auto;
+}
+
+.p45-table {
+  border-collapse: collapse;
+  font-size: .82rem;
+  min-width: 820px;
+  width: 100%;
+}
+
+.p45-table caption {
+  color: var(--p45-ink-soft);
+  font-size: .78rem;
+  padding: .65rem;
+  text-align: left;
+}
+
+.p45-table th,
+.p45-table td {
+  border-bottom: 1px solid var(--p45-border);
+  padding: .65rem .7rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.p45-table th {
+  background: var(--p45-cyan-050);
+  color: var(--p45-cyan-950);
+  font-family: var(--p45-font-display);
+  font-size: .72rem;
+  letter-spacing: .015em;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.p45-table tbody tr:hover {
+  background: #f8fcfd;
+}
+
+.p45-table .p45-number {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.p45-sort {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  min-height: 0;
+  padding: 0;
+}
+
+.p45-sort:hover {
+  background: transparent;
+  color: var(--p45-cyan-700);
+}
+
+.p45-matrix {
+  border-collapse: separate;
+  border-spacing: 3px;
+  font-size: .7rem;
+  min-width: 1100px;
+  width: 100%;
+}
+
+.p45-matrix th {
+  background: var(--p45-cyan-950);
+  color: #fff;
+  font-family: var(--p45-font-display);
+  min-width: 96px;
+  padding: .55rem;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
+.p45-matrix th:first-child {
+  left: 0;
+  min-width: 220px;
+  z-index: 5;
+}
+
+.p45-matrix td {
+  padding: 0;
+  text-align: center;
+}
+
+.p45-matrix td:first-child {
+  background: #fff;
+  border: 1px solid var(--p45-border);
+  left: 0;
+  padding: .55rem;
+  position: sticky;
+  text-align: left;
+  z-index: 2;
+}
+
+.p45-matrix a {
+  align-items: center;
+  border-radius: 5px;
+  color: var(--p45-ink);
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  justify-content: center;
+  min-height: 62px;
+  padding: .35rem;
+  text-decoration: none;
+}
+
+.p45-matrix a[data-class="consolidated"] {
+  background: var(--p45-consolidated-soft);
+}
+
+.p45-matrix a[data-class="strengthening"] {
+  background: var(--p45-strengthening-soft);
+}
+
+.p45-matrix a[data-class="attention"] {
+  background: var(--p45-attention-soft);
+}
+
+.p45-matrix a[data-class="priority"] {
+  background: var(--p45-priority-soft);
+}
+
+.p45-matrix a[data-class="neutral"] {
+  background: var(--p45-neutral-soft);
+}
+
+.p45-mobile-matrix-control {
+  display: none;
+}
