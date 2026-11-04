@@ -1,9 +1,11 @@
-# Painel WASH — revisão e código
+# Painel WASH — W28-R1
 
-A entrega de código mais recente registrada neste repositório é a [W28-R1](revisoes/w28r1/README.md), sincronizada em 04/11/2026 a partir da candidata local concluída em 31/10/2026. Inclui a correção dos Excel para uma única aba: `respostas_31` ou `respostas_89`.
+A versão pública agregada atual está disponível em https://andemacj.github.io/painel-wash-review/current/ . A raiz do site e os antigos endereços de diagnóstico, metodologia e relatório redirecionam para essa versão.
 
-O registro contém código e documentação; as bases privadas, os índices escolares e os exemplos nominais permanecem no ambiente local. Consulte [o manifesto de código e a síntese de validação](revisoes/w28r1/SOURCE_REVIEW.json).
+Publicação em 04/11/2026 a partir da candidata concluída em 31/10/2026. Autoavaliação até 26/10/2026; coleta de 27/10/2026; infraestrutura Censo 2025. Esta publicação não representa uma coleta nova.
 
-O [site de revisão W14A](https://andemacj.github.io/painel-wash-review/) e seus arquivos na raiz permanecem como a entrega histórica anteriormente publicada. Esta sincronização não promove a W28-R1 para o site nem publica no Drupal.
+O perfil público inclui monitoramento territorial, mapa municipal de cobertura, diagnóstico estratégico, leituras de equidade consolidadas, relatórios territoriais e CSV agregados. O GitHub Pages é estático: Excel de respostas escolares, mapas escolares por resposta, recortes Q16 e consultas dinâmicas WASH–Censo exigem o servidor da versão completa e ficam indicados como indisponíveis nesta hospedagem. Não há redirecionamento a localhost, nem dados privados publicados para contornar essa limitação.
 
-As instruções da entrega histórica estão em [README_REVIEW.md](README_REVIEW.md).
+O [código da W28-R1](revisoes/w28r1/README.md) e a [proveniência da publicação](current/version.json) identificam os produtos. A convenção do Excel na versão completa permanece uma única aba: `respostas_31` ou `respostas_89`.
+
+Não foram publicados SQLite, índices nominais, associação por escola à Q16, arquivos Excel reais de QA, credenciais ou perfis de navegador. A candidata local e seus selos permanecem preservados. Esta operação não publica no Drupal nem declara homologação institucional. O histórico W14A está preservado no Git, incluindo o commit `a975c53e9f4534e934d9af8524ac47c6acfc4768`.

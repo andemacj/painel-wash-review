@@ -1,0 +1,6 @@
+/* Only the embedded viewport changes dialog placement; standalone W21 remains. */
+@media screen{
+html.wash-embed-viewport .info-dialog[open],html.wash-embed-viewport .drawer-dialog[open],html.wash-embed-viewport .report-viewer[open]{position:fixed;top:var(--wash-visible-top,12px);bottom:auto;max-height:var(--wash-visible-height,calc(100dvh - 24px));margin-top:0;margin-bottom:0}
+html.wash-embed-viewport .report-viewer[open]{height:var(--wash-visible-height,calc(100dvh - 24px))}
+html.wash-embed-viewport .drawer-dialog[open]{height:var(--wash-visible-height,calc(100dvh - 24px))}
+}

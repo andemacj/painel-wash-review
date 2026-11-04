@@ -1,0 +1,1 @@
+window.W26_CHARACTERIZATION_CONFIG={classificationVersion:"63560eeb694928d5",labels:{riverside:"Em comunidade ribeirinha",quilombola:"Em comunidade quilombola",indigenous:"Em comunidade indígena",none:"Não inserida em comunidade tradicional (declaração)",other:"Em outra comunidade tradicional"},questionNumber:"16",multiResponse:!1,PUBLICATION_READY:!1};

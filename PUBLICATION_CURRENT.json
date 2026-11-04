@@ -1,0 +1,42 @@
+{
+  "schema": "wash.static.aggregate.publication.v1",
+  "version": "W28-R1",
+  "publishedClientDate": "2026-11-04",
+  "profile": "aggregate",
+  "releaseVersion": "d261027_3455a1a9_006f838c",
+  "sourceDates": {
+    "autoResponses": "2026-10-26",
+    "collection": "2026-10-27",
+    "censusInfrastructure": 2025
+  },
+  "schoolCounts": {
+    "eligible": 53555,
+    "completed": 39209,
+    "pending": 14346
+  },
+  "sourceSealSHA256": "591c44aa23101485badb6a57c72c3d3271c9598a27973fd9f3e39cd76eca7d09",
+  "sourceDistributionSHA256": "2d0a65a90996973155aac8061f693162e58fb878e73652f30f3f7a7deae1b029",
+  "backendAvailable": false,
+  "available": [
+    "territorial monitoring",
+    "municipal coverage maps",
+    "strategic diagnostic",
+    "consolidated equity readings",
+    "territorial reports",
+    "aggregate CSV"
+  ],
+  "requiresServer": [
+    "school-response XLSX",
+    "school maps by answer",
+    "Q16 community subsets",
+    "dynamic WASH-Censo comparison"
+  ],
+  "institutionalHomologation": "NOT_ASSERTED",
+  "drupalPublication": "NOT_EXECUTED",
+  "workbookConvention": [
+    "respostas_31",
+    "respostas_89"
+  ],
+  "entry": "current/",
+  "rollbackCommit": "feda475af553667e9213b74bc2e2e31b9ac15f0f"
+}
