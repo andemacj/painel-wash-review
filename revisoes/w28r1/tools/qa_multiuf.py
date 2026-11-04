@@ -1,0 +1,12 @@
+"""Actual unchanged W25 AP+RR workbook through existing controls, without reducing its declared universe."""
+import shutil,openpyxl
+from qa_support import *
+q=QA('multiuf')
+def work():
+ q.go();q.select({'uf':'AP'});before=q.ev('({...W15.context})');expected=q.ev("W15.summary({...W15.context,uf:'AP',ibge:'',scope:'all'}).eligible+W15.summary({...W15.context,uf:'RR',ibge:'',scope:'all'}).eligible");q.ev('W25Operational.open(W15.context);true');q.wait('!!W25Operational.state.data');q.ev("document.querySelector('[data-w25=export]').click();true");q.wait("!!document.querySelector('#w25ExportForm')");q.ev("document.querySelectorAll('input[name=w25uf]').forEach(x=>x.checked=['AP','RR'].includes(x.value));document.querySelector('#w25ExportForm').dispatchEvent(new Event('change',{bubbles:true}));true");q.wait("W25Operational.state.preview?.model?.ufs?.length===2&&!document.querySelector('#w25Generate').disabled");q.check(q.ev('W25Operational.state.preview.rows.length')==expected,'AP+RR existing preview includes every eligible school');folder=q.runtime/'downloads';folder.mkdir();q.c.call('Browser.setDownloadBehavior',{'behavior':'allow','downloadPath':str(folder)});q.ev("document.querySelector('#w25Generate').click();true",userGesture=True);end=time.monotonic()+40;files=[]
+ while time.monotonic()<end:
+  files=list(folder.glob('*.xlsx'))
+  if len(files)==1 and not list(folder.glob('*.crdownload')):break
+  time.sleep(.1)
+ assert len(files)==1;target=A/'xlsx/operational_AP_RR.xlsx';shutil.copyfile(files[0],target);book=openpyxl.load_workbook(target,read_only=True);q.check(book.sheetnames==['RESUMO','ESCOLAS','LEIA-ME']and book['ESCOLAS'].max_row==expected+1,'Actual AP+RR workbook reopens with all rows and original three-sheet contract');rows=list(book['ESCOLAS'].values);headers=rows[0];uf_col=headers.index('UF');inep_col=next(i for i,v in enumerate(headers)if'INEP'in str(v));q.check(set(r[uf_col]for r in rows[1:])=={'AP','RR'}and len({r[inep_col]for r in rows[1:]})==expected,'Actual consolidated workbook has exactly the two selected UFs and unique schools');q.check(q.ev('({...W15.context})')==before,'Consolidated export does not change the exploration filters');q.result['workbook']={'file':str(target.relative_to(E)),'bytes':target.stat().st_size,'sha256':sha(target),'schools':expected,'selectedUFs':['AP','RR'],'sheets':book.sheetnames};book.close()
+if __name__=='__main__':sys.exit(0 if main_guard(q,work)else 1)
