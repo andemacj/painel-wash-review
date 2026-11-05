@@ -23,7 +23,10 @@
     "strategic diagnostic",
     "consolidated equity readings",
     "territorial reports",
-    "aggregate CSV"
+    "aggregate CSV",
+    "named school completion/pending lists",
+    "municipal and state participation reports",
+    "participation print/PDF and list export"
   ],
   "requiresServer": [
     "school-response XLSX",
@@ -38,5 +41,24 @@
     "respostas_89"
   ],
   "entry": "current/",
-  "rollbackCommit": "feda475af553667e9213b74bc2e2e31b9ac15f0f"
+  "rollbackCommit": "feda475af553667e9213b74bc2e2e31b9ac15f0f",
+  "schoolParticipation": {
+    "available": true,
+    "fields": [
+      "inep",
+      "name",
+      "ibge",
+      "uf",
+      "scope",
+      "status"
+    ],
+    "eligible": 53555,
+    "completed": 39209,
+    "pending": 14346,
+    "source": "same frozen W25/W28-R1 release",
+    "individualAnswers": false,
+    "Q16Associations": false,
+    "individualResponseDates": false
+  },
+  "correction": "MUNICIPAL_NAMED_PARTICIPATION_RESTORED_20261104"
 }

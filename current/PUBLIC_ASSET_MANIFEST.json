@@ -14492,9 +14492,9 @@
       "sourceSHA256": "da7892790f1161839d3ba91adc01ecf425b417b1233e7580b348b95def9763da"
     },
     "index.html": {
-      "bytes": 20920,
-      "sha256": "a918878822854b308c5ef1b34ac8166a8a40457b6af380c403189d31c1455cd7",
-      "sourceSHA256": "13f2cef503790f7078d8552f47dc54348e251a2280294335693fda97bd4fe1a8"
+      "bytes": 20859,
+      "sha256": "ef3f083a52f4efdbb905cb41b403ed19200cada0e5b7a6197b6d4674cae16f53",
+      "sourceSHA256": "hosting-fix"
     },
     "relatorio.html": {
       "bytes": 1447,
@@ -14507,9 +14507,114 @@
       "sourceSHA256": "d9a0447de8b3004ef03551deb5b07999b69ae2219d999a1f0c94e0502e422205"
     },
     "assets/publication.js": {
-      "bytes": 2360,
-      "sha256": "ed975ddeb39b1e1467b4520039b87dbfe3478d4731ed47f729e6d8d69f2b52c5",
-      "source": "hosting-adapter"
+      "bytes": 2475,
+      "sha256": "92faf6d71223a67b95399b7de52784fb5b638d93298a320b3bc600959fa36fdf",
+      "sourceSHA256": "hosting-fix"
+    },
+    "assets/operational.js": {
+      "bytes": 21024,
+      "sha256": "4603c469cf18349211ea4a2ee5bdac04224735fc0aac17a3e32505502306847c",
+      "sourceSHA256": "073c1fd695484ecf145cfb4699a2444a4ad979f077242841b891dda7dd762c97"
+    },
+    "assets/operational-model.js": {
+      "bytes": 5515,
+      "sha256": "60877b697897f5f675b2e88d519b87a0a2de08b4b64061e702ddf14d6641ad6b",
+      "sourceSHA256": "60877b697897f5f675b2e88d519b87a0a2de08b4b64061e702ddf14d6641ad6b"
+    },
+    "data/operational/metadata.json.gz": {
+      "bytes": 1023,
+      "sha256": "b7ea6151b54bd0109389fa953f26a5c384c5f85a1a72bc804c21a09cb39a48b1",
+      "sourceSHA256": "7b6a059682553477729f3b055fc23f779908e66edcbbb237b4bf71bd79add75e"
+    },
+    "data/operational/uf-AC.json.gz": {
+      "bytes": 12662,
+      "sha256": "a171e7b4f9c2391c5836912955a13242b71b15da526c6285dc449b6e89abc13e",
+      "sourceSHA256": "a171e7b4f9c2391c5836912955a13242b71b15da526c6285dc449b6e89abc13e"
+    },
+    "data/operational/uf-AL.json.gz": {
+      "bytes": 29010,
+      "sha256": "236edfa8852da19379af00c2104c2050f2c1f21fca5f43944a370c02c3a704a4",
+      "sourceSHA256": "236edfa8852da19379af00c2104c2050f2c1f21fca5f43944a370c02c3a704a4"
+    },
+    "data/operational/uf-AM.json.gz": {
+      "bytes": 51069,
+      "sha256": "62556b729d3b540e1231077efc4da894ddea087a3cf0d1d539bd9b08a5268716",
+      "sourceSHA256": "62556b729d3b540e1231077efc4da894ddea087a3cf0d1d539bd9b08a5268716"
+    },
+    "data/operational/uf-AP.json.gz": {
+      "bytes": 6804,
+      "sha256": "72cd8c892141159f0e6365d419547d26eff5107b7622d30c0be2b0f802d8beec",
+      "sourceSHA256": "72cd8c892141159f0e6365d419547d26eff5107b7622d30c0be2b0f802d8beec"
+    },
+    "data/operational/uf-BA.json.gz": {
+      "bytes": 110213,
+      "sha256": "e4e832ac97ef246b73fe94b710ba7fe8722cce3a754a7230ca160f4f1996a158",
+      "sourceSHA256": "e4e832ac97ef246b73fe94b710ba7fe8722cce3a754a7230ca160f4f1996a158"
+    },
+    "data/operational/uf-CE.json.gz": {
+      "bytes": 75598,
+      "sha256": "e4ccf9b57bb7ff969e5e148dd70782cb764853f28bb25e408c99f859cabb8e2b",
+      "sourceSHA256": "e4ccf9b57bb7ff969e5e148dd70782cb764853f28bb25e408c99f859cabb8e2b"
+    },
+    "data/operational/uf-MA.json.gz": {
+      "bytes": 123378,
+      "sha256": "cce56be97309982da5a6ffbacf96376e3d12f4b72dd3c2f07bf7ea1e2e0a9ce1",
+      "sourceSHA256": "cce56be97309982da5a6ffbacf96376e3d12f4b72dd3c2f07bf7ea1e2e0a9ce1"
+    },
+    "data/operational/uf-MG.json.gz": {
+      "bytes": 27157,
+      "sha256": "cbdf63cf0dd0286ec4ff62fc04c25294597ed2be6785c288895c2ae7d26917a1",
+      "sourceSHA256": "cbdf63cf0dd0286ec4ff62fc04c25294597ed2be6785c288895c2ae7d26917a1"
+    },
+    "data/operational/uf-MT.json.gz": {
+      "bytes": 22796,
+      "sha256": "9bdd456997580e24f97d565b18f2d9d163f84aab4f1545fb4782954d13673d5d",
+      "sourceSHA256": "9bdd456997580e24f97d565b18f2d9d163f84aab4f1545fb4782954d13673d5d"
+    },
+    "data/operational/uf-PA.json.gz": {
+      "bytes": 116847,
+      "sha256": "b269c587b7a0653b1c92c921fef635c5bb08f3739ebfd0d469459378d7d2832c",
+      "sourceSHA256": "b269c587b7a0653b1c92c921fef635c5bb08f3739ebfd0d469459378d7d2832c"
+    },
+    "data/operational/uf-PB.json.gz": {
+      "bytes": 43503,
+      "sha256": "67494ec710d791ce514a787b8a3c224617bec5bd448af51ab0905f78b513a730",
+      "sourceSHA256": "67494ec710d791ce514a787b8a3c224617bec5bd448af51ab0905f78b513a730"
+    },
+    "data/operational/uf-PE.json.gz": {
+      "bytes": 52018,
+      "sha256": "4771cbf818aba1e01dcba6450732a2d8f9818e40adbaa29a1accbfdee35c94ac",
+      "sourceSHA256": "4771cbf818aba1e01dcba6450732a2d8f9818e40adbaa29a1accbfdee35c94ac"
+    },
+    "data/operational/uf-PI.json.gz": {
+      "bytes": 44819,
+      "sha256": "6b85af0f86e8fe048d0639dc43567d13ce40a10d40291246c1df0d9c05964bb6",
+      "sourceSHA256": "6b85af0f86e8fe048d0639dc43567d13ce40a10d40291246c1df0d9c05964bb6"
+    },
+    "data/operational/uf-RN.json.gz": {
+      "bytes": 33987,
+      "sha256": "04cb6b39d4de90c44c2e7056326100123ad1ee8b2cbb8da83095e7598f91020e",
+      "sourceSHA256": "04cb6b39d4de90c44c2e7056326100123ad1ee8b2cbb8da83095e7598f91020e"
+    },
+    "data/operational/uf-RO.json.gz": {
+      "bytes": 9935,
+      "sha256": "23a99b8449fa842052937c0dfb1540ad47a766be2e6d3bfe8cd3b173e2b54b4c",
+      "sourceSHA256": "23a99b8449fa842052937c0dfb1540ad47a766be2e6d3bfe8cd3b173e2b54b4c"
+    },
+    "data/operational/uf-RR.json.gz": {
+      "bytes": 7932,
+      "sha256": "905f4322b8b83aa5e243632e49fb1d40131fe5dab75d54a866ad859313c2014b",
+      "sourceSHA256": "905f4322b8b83aa5e243632e49fb1d40131fe5dab75d54a866ad859313c2014b"
+    },
+    "data/operational/uf-SE.json.gz": {
+      "bytes": 15091,
+      "sha256": "abf7ee1e16d555f250cf63199709866bb8aeee486eebcc2f5e9b2a5d70deb735",
+      "sourceSHA256": "abf7ee1e16d555f250cf63199709866bb8aeee486eebcc2f5e9b2a5d70deb735"
+    },
+    "data/operational/uf-TO.json.gz": {
+      "bytes": 15219,
+      "sha256": "af97a0ac1648d1d85e415eceabda490c432ceb0f8a5d6effd3916493ec204bda",
+      "sourceSHA256": "af97a0ac1648d1d85e415eceabda490c432ceb0f8a5d6effd3916493ec204bda"
     }
   }
 }

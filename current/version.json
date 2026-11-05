@@ -23,7 +23,10 @@
     "strategic diagnostic",
     "consolidated equity readings",
     "territorial reports",
-    "aggregate CSV"
+    "aggregate CSV",
+    "named school completion/pending lists",
+    "municipal and state participation reports",
+    "participation print/PDF and list export"
   ],
   "requiresServer": [
     "school-response XLSX",
@@ -36,5 +39,24 @@
   "workbookConvention": [
     "respostas_31",
     "respostas_89"
-  ]
+  ],
+  "schoolParticipation": {
+    "available": true,
+    "fields": [
+      "inep",
+      "name",
+      "ibge",
+      "uf",
+      "scope",
+      "status"
+    ],
+    "eligible": 53555,
+    "completed": 39209,
+    "pending": 14346,
+    "source": "same frozen W25/W28-R1 release",
+    "individualAnswers": false,
+    "Q16Associations": false,
+    "individualResponseDates": false
+  },
+  "correction": "MUNICIPAL_NAMED_PARTICIPATION_RESTORED_20261104"
 }

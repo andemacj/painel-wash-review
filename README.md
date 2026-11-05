@@ -1,11 +1,11 @@
 # Painel WASH — W28-R1
 
-A versão pública agregada atual está disponível em https://andemacj.github.io/painel-wash-review/current/ . A raiz do site e os antigos endereços de diagnóstico, metodologia e relatório redirecionam para essa versão.
+Versão atual: https://andemacj.github.io/painel-wash-review/current/ .
 
-Publicação em 04/11/2026 a partir da candidata concluída em 31/10/2026. Autoavaliação até 26/10/2026; coleta de 27/10/2026; infraestrutura Censo 2025. Esta publicação não representa uma coleta nova.
+Ao clicar em um município no mapa ou na lista, o acompanhamento mostra nominalmente as escolas elegíveis, com abas Todas, Finalizadas e Pendentes. Os números da lista são reconciliados com os indicadores municipais da mesma base. Estão disponíveis busca, ordenação, paginação, impressão do acompanhamento completo e exportação operacional da lista.
 
-O perfil público inclui monitoramento territorial, mapa municipal de cobertura, diagnóstico estratégico, leituras de equidade consolidadas, relatórios territoriais e CSV agregados. O GitHub Pages é estático: Excel de respostas escolares, mapas escolares por resposta, recortes Q16 e consultas dinâmicas WASH–Censo exigem o servidor da versão completa e ficam indicados como indisponíveis nesta hospedagem. Não há redirecionamento a localhost, nem dados privados publicados para contornar essa limitação.
+A correção de 04/11/2026 restaura o módulo W25 que havia sido omitido na publicação agregada. A identificação institucional inclui apenas INEP, nome, IBGE, UF, área e situação. Não foram adicionados dados de pessoas, contatos, respostas individuais, vínculos Q16, matrículas, coordenadas ou datas individuais. Pendente significa elegível sem finalização; não prova que a escola nunca iniciou.
 
-O [código da W28-R1](revisoes/w28r1/README.md) e a [proveniência da publicação](current/version.json) identificam os produtos. A convenção do Excel na versão completa permanece uma única aba: `respostas_31` ou `respostas_89`.
+O monitoramento, diagnóstico estratégico, equidade consolidada, relatórios territoriais e CSV agregados continuam disponíveis. Excel com respostas ao questionário, mapas escolares por resposta, recortes Q16 e consultas dinâmicas WASH–Censo continuam dependentes do servidor da versão completa. O Excel operacional de acompanhamento é um produto distinto dos Excel de respostas_31/respostas_89.
 
-Não foram publicados SQLite, índices nominais, associação por escola à Q16, arquivos Excel reais de QA, credenciais ou perfis de navegador. A candidata local e seus selos permanecem preservados. Esta operação não publica no Drupal nem declara homologação institucional. O histórico W14A está preservado no Git, incluindo o commit `a975c53e9f4534e934d9af8524ac47c6acfc4768`.
+Respostas até 26/10/2026, coleta de 27/10/2026, Censo 2025. A correção não atualiza a base, não altera a candidata local nem seus selos e não publica no Drupal. O código original está em revisoes/w28r1/; a autorização desta correção se limita ao acompanhamento escolar solicitado pelo usuário.
