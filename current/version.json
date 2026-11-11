@@ -26,10 +26,11 @@
     "aggregate CSV",
     "named school completion/pending lists",
     "municipal and state participation reports",
-    "participation print/PDF and list export"
+    "participation print/PDF and list export",
+    "31-question single-sheet school response XLSX",
+    "89-question single-sheet school response XLSX"
   ],
   "requiresServer": [
-    "school-response XLSX",
     "school maps by answer",
     "Q16 community subsets",
     "dynamic WASH-Censo comparison"
@@ -58,5 +59,32 @@
     "Q16Associations": false,
     "individualResponseDates": false
   },
-  "correction": "MUNICIPAL_NAMED_PARTICIPATION_RESTORED_20261104"
+  "correction": "SCHOOL_RESPONSE_WORKBOOKS_RESTORED_20261111",
+  "correctionClientDate": "2026-11-11",
+  "schoolResponseWorkbooks": {
+    "available": true,
+    "delivery": "public_masked_static",
+    "questionCounts": [
+      31,
+      89
+    ],
+    "worksheets": [
+      "respostas_31",
+      "respostas_89"
+    ],
+    "allowedQuestions": 83,
+    "maskedQuestionNumbers": [
+      "16",
+      "18",
+      "77",
+      "103",
+      "104",
+      "106"
+    ],
+    "municipalityRequired": true,
+    "scope": "all",
+    "Q16Active": "BLOCKED",
+    "sourceReference": "2026-10-26",
+    "collectionDate": "2026-10-27"
+  }
 }
