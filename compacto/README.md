@@ -1,13 +1,13 @@
-# Painel reduzido municipal WASH · W29
+# Devolutiva municipal WASH — site GitHub
 
-[Abrir a devolutiva municipal](https://andemacj.github.io/painel-wash-review/compacto/) · [Baixar o HTML integral para Drupal](https://andemacj.github.io/painel-wash-review/compacto/baixar.html)
+[Abrir o painel](https://andemacj.github.io/painel-wash-review/compacto/) · [Baixar o HTML único para Drupal](https://andemacj.github.io/painel-wash-review/compacto/baixar.html) · [Painel completo](https://andemacj.github.io/painel-wash-review/current/#monitoramento)
 
-Esta é a publicação corrigida do arquivo `painel_devolutiva_municipal/entrega/html_unico_20261113/index.html`. O painel permite selecionar um município, ver nominalmente suas escolas, filtrar Finalizadas/Pendentes, abrir o relatório de participação e acessar diagnóstico, mapa e Excel de 31/89 questões.
+O site abre a interface e a lista de municípios primeiro. Ao selecionar um município, baixa somente sua parte básica, com todas as escolas, status e diagnóstico. Mapas, matrículas, leituras complementares e Excel carregam a parte detalhada desse município quando necessária. Não há download inicial do HTML de 116 MB nem do pacote nacional de 87 MB.
 
-O HTML original tem 116.092.565 bytes, SHA256 `4861a00cdfecb7e10402ac58eb6f37c55abcae4932baf74d9c6c65b020cdd212`. Como excede o limite de arquivo do Git, é transportado em gzip sem perdas, conferido e descompactado no navegador. Aplicativo e dados não foram recompilados ou substituídos. O código web verifica também o hash do HTML descompactado antes de abri-lo ou oferecê-lo para download.
+Reutiliza exatamente a base municipal W29 d261027_3455a1a9_006f838c: respostas até 26/10/2026, coletadas em 27/10/2026. Não recalcula indicadores, não atualiza a base e preserva as regras e restrições aprovadas, inclusive as seis questões mascaradas no Excel. Cada Excel tem uma única aba, respostas_31 ou respostas_89.
 
-**Para Drupal, use o index.html integral obtido pelo link de download.** O pequeno index deste diretório é o carregador de hospedagem e precisa do gzip; ele não é o HTML único de entrega Drupal. O download produz o arquivo original completo, que funciona sozinho.
+Os arquivos data/4a3e563bd4b6/<IBGE>/base.json.gz e detail.json.gz são o conteúdo gzip original das partições municipais seladas, retirado do invólucro JavaScript/base64. Todos os 4.554 conteúdos foram conferidos pelo manifesto de origem. A interface e os renderizadores aprovados foram preservados; mudou apenas o carregamento e o aviso de identificação do site.
 
-Correção de 16/11/2026: a edição territorial W22-R1 foi publicada equivocadamente como reduzida em 15/11. Ela é uma referência histórica diferente e foi separada em `historico/w22-r1/`. A versão territorial W28-R1 em `/current/` permanece preservada.
+Para Drupal, baixar.html continua entregando o HTML único original de 116.092.565 bytes, SHA256 4861a00cdfecb7e10402ac58eb6f37c55abcae4932baf74d9c6c65b020cdd212. O index.html deste site é a edição web e usa as partições; não é a entrega Drupal.
 
-A base é a mesma do arquivo indicado: respostas até 26/10/2026 e coleta de 27/10/2026. Esta correção publica o produto correto, sem representar nova coleta ou homologação institucional. Fontes, máscaras, restrições e manifestos originais foram preservados.
+O painel territorial completo permanece em /current/. A publicação GitHub não afirma homologação institucional nem publicação em Drupal.
