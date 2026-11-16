@@ -1,4 +1,4 @@
-# Painel WASH — W28-R1
+# Painéis WASH
 
 Versão atual: https://andemacj.github.io/painel-wash-review/current/ .
 
@@ -14,8 +14,13 @@ Respostas até 26/10/2026, coleta de 27/10/2026, Censo 2025. A correção não a
 
 Na central de relatórios, escolha estado e município para baixar os arquivos de 31 ou 89 questões. Cada arquivo tem uma única aba, `respostas_31` ou `respostas_89`, com temas acima das questões. A exportação usa Geral e todas as escolas elegíveis do município, mantendo inalterado o filtro global de área. Pendentes permanecem sem respostas fabricadas. As seis questões Q16, Q18, Q77, Q103, Q104 e Q106 permanecem mascaradas; seus valores não integram os arquivos de dados públicos. Foram restauradas também as três descrições restritas ausentes do catálogo agregado, para preservar exatamente 89 colunas de questões. Não foram acrescentados campos de Censo, dados de pessoas, vínculos Q16 ou coordenadas. A base continua em 26/10/2026, coletada em 27/10/2026.
 
-## Painel reduzido · W22-R1
 
-[Abrir a versão compacta](https://andemacj.github.io/painel-wash-review/compacto/) · [Arquivo HTML único](compacto/index.html) · [Proveniência](compacto/version.json).
+## Painel reduzido municipal · W29
 
-Adicionada em 15/11/2026: edição W22-R1 de 13,18 MB, com mapa interativo e Excel de uma aba (`respostas_31` e `respostas_89`). É uma referência anterior, com escopo diferente da W28-R1 atual e da devolutiva municipal W29. O aplicativo e os dados aprovados foram preservados; somente UTF-8, viewport e título foram acrescentados para abertura direta na web. A base continua em 26/10/2026, coletada em 27/10/2026. A entrada atual em `/current/` permanece a W28-R1.
+[Abrir o painel municipal](https://andemacj.github.io/painel-wash-review/compacto/) · [Baixar o HTML integral para Drupal](https://andemacj.github.io/painel-wash-review/compacto/baixar.html) · [Proveniência](compacto/version.json).
+
+Correção de 16/11/2026: o produto correto é a devolutiva municipal do arquivo `painel_devolutiva_municipal/entrega/html_unico_20261113/index.html`, de 116.092.565 bytes. Permite selecionar município, ver os nomes das escolas, alternar Finalizadas/Pendentes, emitir o relatório nominal e acessar diagnóstico, mapa e Excel de 31/89 questões.
+
+O arquivo original é preservado, com SHA256 `4861a00cdfecb7e10402ac58eb6f37c55abcae4932baf74d9c6c65b020cdd212`. Por ultrapassar o limite de arquivo Git, ele é transportado em gzip sem perdas e conferido/descompactado no navegador. Para Drupal, o link de download produz exatamente o HTML original único; o pequeno carregador web não é a entrega Drupal. A base permanece com respostas até 26/10/2026, coletadas em 27/10/2026.
+
+Em 15/11/2026 a edição territorial W22-R1 foi publicada equivocadamente como reduzida. Essa origem foi separada como [referência histórica](historico/w22-r1/README.md). A versão territorial W28-R1 e o endereço `/current/` foram preservados.

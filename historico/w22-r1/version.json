@@ -1,0 +1,37 @@
+{
+  "schema": "wash.compact.github.publication.v1",
+  "version": "W22-R1",
+  "entry": "index.html",
+  "bytes": 13184598,
+  "sha256": "457bbaba10954ae8d0f3477f67d338a5f69f13f6b7499d717902f1de684c3604",
+  "originalFragmentBytes": 13184399,
+  "originalFragmentSHA256": "7077c55943eb9f74bf4b0458a64e74d1ef3ec21595bee5625d69e79c9c959382",
+  "applicationBytesUnchanged": true,
+  "hostingOnlyAdaptation": "HTML document wrapper with UTF-8, viewport and title; original BOM treated as encoding marker",
+  "singleHTML": true,
+  "releaseVersion": "d261027_3455a1a9_006f838c",
+  "sourceDates": {
+    "responsesThrough": "2026-10-26",
+    "collection": "2026-10-27"
+  },
+  "questionSets": [
+    31,
+    89
+  ],
+  "worksheets": [
+    "respostas_31",
+    "respostas_89"
+  ],
+  "maskedQuestions": [
+    "16",
+    "18",
+    "77",
+    "103",
+    "104",
+    "106"
+  ],
+  "publishedClientDate": "2026-11-15",
+  "scope": "Earlier compact territorial dashboard; separate from current W28-R1 and municipal W29",
+  "institutionalHomologation": "NOT_ASSERTED",
+  "drupalPublication": "NOT_EXECUTED"
+}

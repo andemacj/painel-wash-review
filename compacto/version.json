@@ -1,37 +1,32 @@
 {
-  "schema": "wash.compact.github.publication.v1",
-  "version": "W22-R1",
-  "entry": "index.html",
-  "bytes": 13184598,
-  "sha256": "457bbaba10954ae8d0f3477f67d338a5f69f13f6b7499d717902f1de684c3604",
-  "originalFragmentBytes": 13184399,
-  "originalFragmentSHA256": "7077c55943eb9f74bf4b0458a64e74d1ef3ec21595bee5625d69e79c9c959382",
-  "applicationBytesUnchanged": true,
-  "hostingOnlyAdaptation": "HTML document wrapper with UTF-8, viewport and title; original BOM treated as encoding marker",
-  "singleHTML": true,
-  "releaseVersion": "d261027_3455a1a9_006f838c",
-  "sourceDates": {
-    "responsesThrough": "2026-10-26",
-    "collection": "2026-10-27"
+  "schema": "wash.w29.github.lossless-transport.v1",
+  "version": "W29",
+  "product": "Painel reduzido municipal WASH",
+  "sourceFile": "painel_devolutiva_municipal/entrega/html_unico_20261113/index.html",
+  "sourceBytes": 116092565,
+  "sourceSHA256": "4861a00cdfecb7e10402ac58eb6f37c55abcae4932baf74d9c6c65b020cdd212",
+  "transport": {
+    "file": "painel-municipal.html.gz",
+    "bytes": 87261814,
+    "sha256": "57720ba0df0d63506621c2c4a12aa66f5660cf708fa74b4aa12cb992cddefcb2",
+    "compression": "gzip",
+    "lossless": true
   },
+  "entry": "index.html",
+  "download": "baixar.html",
+  "drupalDelivery": "One reconstructed original index.html; the web bootstrap is not the Drupal deliverable",
+  "applicationRebuilt": false,
+  "municipalities": 2277,
   "questionSets": [
     31,
     89
   ],
-  "worksheets": [
-    "respostas_31",
-    "respostas_89"
-  ],
-  "maskedQuestions": [
-    "16",
-    "18",
-    "77",
-    "103",
-    "104",
-    "106"
-  ],
-  "publishedClientDate": "2026-11-15",
-  "scope": "Earlier compact territorial dashboard; separate from current W28-R1 and municipal W29",
+  "correctsWrongW22Publication": "55b589488fbe8f4e1b31f7fab15e958f1a7c4072",
+  "publicationClientDate": "2026-11-16",
+  "sourceDates": {
+    "responsesThrough": "2026-10-26",
+    "collection": "2026-10-27"
+  },
   "institutionalHomologation": "NOT_ASSERTED",
   "drupalPublication": "NOT_EXECUTED"
 }
