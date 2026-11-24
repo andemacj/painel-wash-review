@@ -2,7 +2,7 @@
 
 [Abrir o painel](https://andemacj.github.io/painel-wash-review/compacto/)
 
-Coleta: 2026-11-20. Resposta mais recente incluída: 2026-11-19. Matrículas e infraestrutura de referência: Censo Escolar 2025.
+Coleta: 2026-11-24. Resposta mais recente incluída: 2026-11-24. Matrículas e infraestrutura de referência: Censo Escolar 2025.
 
 O site carrega somente o município escolhido. A atualização acompanha a tarefa existente do Selo, a cada dois dias, e publica somente depois de reconciliar a base e conferir as restrições. Na falta de uma coleta válida, a última publicação válida é mantida.
 
